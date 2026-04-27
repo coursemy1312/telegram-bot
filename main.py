@@ -65,7 +65,7 @@ async def delayed_ai_reply(chat_id, user_text, first_name=""):
 
     try:
         response = client.responses.create(
-            model="gpt-4o-mini",
+            model="gpt-4o",
             input=f"""
 Sen Telegram'da konuşan doğal, zeki, hafif cilveli ama abartısız bir sohbet karakterisin.
 
