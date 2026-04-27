@@ -35,7 +35,7 @@ async def telegram_webhook(request: Request):
         return {"ok": True}
 
     response = client.responses.create(
-        model="gpt-4.1-mini",
+        model="gpt-4o-mini",
         input=f"Kullanıcıya Türkçe, kısa ve net cevap ver: {user_text}"
     )
 
