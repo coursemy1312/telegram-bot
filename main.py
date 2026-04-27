@@ -12,6 +12,17 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 TELEGRAM_URL = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
 
+
+@app.get("/")
+def home():
+    return {"status": "bot çalışıyor"}
+
+
+@app.get("/healthz")
+def healthz():
+    return {"ok": True}
+
+
 @app.post("/webhook")
 async def telegram_webhook(request: Request):
     data = await request.json()
