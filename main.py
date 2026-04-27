@@ -47,7 +47,7 @@ async def delayed_ai_reply(chat_id, user_text, first_name=""):
     # Gecikme sistemi
     # Çoğu zaman 20-80 sn, bazen 5-10 dk
     if random.random() < 0.15:
-        delay = random.randint(300, 600)  # 5-10 dk
+        delay = random.randint(120, 240)  # 5-10 dk
     else:
         delay = random.randint(20, 80)  # 20-80 sn
 
